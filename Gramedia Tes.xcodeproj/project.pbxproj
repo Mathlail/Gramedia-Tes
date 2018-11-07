@@ -7,21 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5967CC3D21927413003A49FB /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5967CC3C21927413003A49FB /* DataModel.swift */; };
+		5967CC402192BDCE003A49FB /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5967CC3F2192BDCE003A49FB /* NumberFormatter.swift */; };
+		59694B28219352BF00C29791 /* DetailAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59694B27219352BF00C29791 /* DetailAppsViewController.swift */; };
+		597E49CF2192C533009EDE76 /* BaseNewGamesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597E49CE2192C533009EDE76 /* BaseNewGamesCollectionViewCell.swift */; };
+		597E49D12192C76E009EDE76 /* ListGamesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597E49D02192C76E009EDE76 /* ListGamesCollectionViewCell.swift */; };
+		597E49D32192ED4C009EDE76 /* ListGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597E49D22192ED4C009EDE76 /* ListGamesViewController.swift */; };
+		597E49D52192F432009EDE76 /* ListGamesBigCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597E49D42192F432009EDE76 /* ListGamesBigCollectionViewCell.swift */; };
 		59D141562191C501009D9FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D141552191C501009D9FF1 /* AppDelegate.swift */; };
-		59D141582191C501009D9FF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D141572191C501009D9FF1 /* ViewController.swift */; };
-		59D1415B2191C501009D9FF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D141592191C501009D9FF1 /* Main.storyboard */; };
 		59D1415D2191C501009D9FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D1415C2191C501009D9FF1 /* Assets.xcassets */; };
 		59D141602191C501009D9FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D1415E2191C501009D9FF1 /* LaunchScreen.storyboard */; };
+		59D1416A2191C64D009D9FF1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D141692191C64D009D9FF1 /* HomeViewController.swift */; };
+		59D1416E2191CD48009D9FF1 /* BaseBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1416D2191CD48009D9FF1 /* BaseBannerCollectionViewCell.swift */; };
+		59D141702191D16D009D9FF1 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D1416F2191D16D009D9FF1 /* BannerCollectionViewCell.swift */; };
+		9BDD5420FE7DB8EE4E952150 /* Pods_Gramedia_Tes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBC23278DF07F38E14DE4A1 /* Pods_Gramedia_Tes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5967CC3C21927413003A49FB /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		5967CC3F2192BDCE003A49FB /* NumberFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
+		59694B27219352BF00C29791 /* DetailAppsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAppsViewController.swift; sourceTree = "<group>"; };
+		597E49CE2192C533009EDE76 /* BaseNewGamesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNewGamesCollectionViewCell.swift; sourceTree = "<group>"; };
+		597E49D02192C76E009EDE76 /* ListGamesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListGamesCollectionViewCell.swift; sourceTree = "<group>"; };
+		597E49D22192ED4C009EDE76 /* ListGamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListGamesViewController.swift; sourceTree = "<group>"; };
+		597E49D42192F432009EDE76 /* ListGamesBigCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListGamesBigCollectionViewCell.swift; sourceTree = "<group>"; };
 		59D141522191C500009D9FF1 /* Gramedia Tes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gramedia Tes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D141552191C501009D9FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		59D141572191C501009D9FF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		59D1415A2191C501009D9FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59D1415C2191C501009D9FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59D1415F2191C501009D9FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59D141612191C501009D9FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59D141692191C64D009D9FF1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		59D1416D2191CD48009D9FF1 /* BaseBannerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		59D1416F2191D16D009D9FF1 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		720C7D5C9A131EFD017AF467 /* Pods-Gramedia Tes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gramedia Tes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gramedia Tes/Pods-Gramedia Tes.debug.xcconfig"; sourceTree = "<group>"; };
+		C8AD1B897AEBA96099D646CF /* Pods-Gramedia Tes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gramedia Tes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gramedia Tes/Pods-Gramedia Tes.release.xcconfig"; sourceTree = "<group>"; };
+		DFBC23278DF07F38E14DE4A1 /* Pods_Gramedia_Tes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gramedia_Tes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +49,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BDD5420FE7DB8EE4E952150 /* Pods_Gramedia_Tes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		295999A795B9EAE5361AFDA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				720C7D5C9A131EFD017AF467 /* Pods-Gramedia Tes.debug.xcconfig */,
+				C8AD1B897AEBA96099D646CF /* Pods-Gramedia Tes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5967CC3B219273FE003A49FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5967CC3C21927413003A49FB /* DataModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5967CC3E2192BDB9003A49FB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5967CC3F2192BDCE003A49FB /* NumberFormatter.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
 		59D141492191C500009D9FF1 = {
 			isa = PBXGroup;
 			children = (
 				59D141542191C501009D9FF1 /* Gramedia Tes */,
 				59D141532191C500009D9FF1 /* Products */,
+				295999A795B9EAE5361AFDA6 /* Pods */,
+				F5936CCA2C1FBF0B9C64219C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +102,46 @@
 		59D141542191C501009D9FF1 /* Gramedia Tes */ = {
 			isa = PBXGroup;
 			children = (
+				5967CC3E2192BDB9003A49FB /* Tools */,
+				5967CC3B219273FE003A49FB /* Model */,
+				59D141682191C627009D9FF1 /* Cell */,
+				59D141672191C613009D9FF1 /* ViewController */,
 				59D141552191C501009D9FF1 /* AppDelegate.swift */,
-				59D141572191C501009D9FF1 /* ViewController.swift */,
-				59D141592191C501009D9FF1 /* Main.storyboard */,
 				59D1415C2191C501009D9FF1 /* Assets.xcassets */,
 				59D1415E2191C501009D9FF1 /* LaunchScreen.storyboard */,
 				59D141612191C501009D9FF1 /* Info.plist */,
 			);
 			path = "Gramedia Tes";
+			sourceTree = "<group>";
+		};
+		59D141672191C613009D9FF1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				59D141692191C64D009D9FF1 /* HomeViewController.swift */,
+				597E49D22192ED4C009EDE76 /* ListGamesViewController.swift */,
+				59694B27219352BF00C29791 /* DetailAppsViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		59D141682191C627009D9FF1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				59D1416D2191CD48009D9FF1 /* BaseBannerCollectionViewCell.swift */,
+				59D1416F2191D16D009D9FF1 /* BannerCollectionViewCell.swift */,
+				597E49CE2192C533009EDE76 /* BaseNewGamesCollectionViewCell.swift */,
+				597E49D02192C76E009EDE76 /* ListGamesCollectionViewCell.swift */,
+				597E49D42192F432009EDE76 /* ListGamesBigCollectionViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		F5936CCA2C1FBF0B9C64219C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFBC23278DF07F38E14DE4A1 /* Pods_Gramedia_Tes.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59D141642191C501009D9FF1 /* Build configuration list for PBXNativeTarget "Gramedia Tes" */;
 			buildPhases = (
+				ABA0A03BF5CFBE73A2F6A1A1 /* [CP] Check Pods Manifest.lock */,
 				59D1414E2191C500009D9FF1 /* Sources */,
 				59D1414F2191C500009D9FF1 /* Frameworks */,
 				59D141502191C500009D9FF1 /* Resources */,
+				44FF80BC26EA03B8B5ECCB35 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,33 +208,72 @@
 			files = (
 				59D141602191C501009D9FF1 /* LaunchScreen.storyboard in Resources */,
 				59D1415D2191C501009D9FF1 /* Assets.xcassets in Resources */,
-				59D1415B2191C501009D9FF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44FF80BC26EA03B8B5ECCB35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gramedia Tes/Pods-Gramedia Tes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gramedia Tes/Pods-Gramedia Tes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABA0A03BF5CFBE73A2F6A1A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gramedia Tes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		59D1414E2191C500009D9FF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59D141582191C501009D9FF1 /* ViewController.swift in Sources */,
+				5967CC3D21927413003A49FB /* DataModel.swift in Sources */,
+				5967CC402192BDCE003A49FB /* NumberFormatter.swift in Sources */,
+				597E49CF2192C533009EDE76 /* BaseNewGamesCollectionViewCell.swift in Sources */,
 				59D141562191C501009D9FF1 /* AppDelegate.swift in Sources */,
+				59694B28219352BF00C29791 /* DetailAppsViewController.swift in Sources */,
+				597E49D32192ED4C009EDE76 /* ListGamesViewController.swift in Sources */,
+				597E49D12192C76E009EDE76 /* ListGamesCollectionViewCell.swift in Sources */,
+				59D1416E2191CD48009D9FF1 /* BaseBannerCollectionViewCell.swift in Sources */,
+				597E49D52192F432009EDE76 /* ListGamesBigCollectionViewCell.swift in Sources */,
+				59D141702191D16D009D9FF1 /* BannerCollectionViewCell.swift in Sources */,
+				59D1416A2191C64D009D9FF1 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		59D141592191C501009D9FF1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				59D1415A2191C501009D9FF1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		59D1415E2191C501009D9FF1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,6 +382,7 @@
 		};
 		59D141652191C501009D9FF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 720C7D5C9A131EFD017AF467 /* Pods-Gramedia Tes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2G4YL97AU4;
@@ -274,6 +396,7 @@
 		};
 		59D141662191C501009D9FF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8AD1B897AEBA96099D646CF /* Pods-Gramedia Tes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2G4YL97AU4;
@@ -304,6 +427,7 @@
 				59D141662191C501009D9FF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

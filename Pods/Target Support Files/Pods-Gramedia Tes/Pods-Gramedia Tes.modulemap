@@ -1,0 +1,6 @@
+framework module Pods_Gramedia_Tes {
+  umbrella header "Pods-Gramedia Tes-umbrella.h"
+
+  export *
+  module * { export * }
+}
