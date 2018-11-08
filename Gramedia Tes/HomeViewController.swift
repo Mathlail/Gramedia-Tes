@@ -77,7 +77,6 @@ class HomeViewController: UIViewController, OpenDetailProtocol {
                 }
                 
                 DispatchQueue.main.async {
-                    print(self.dataNewReleaseGames)
                     self.collectionView.reloadData()
                 }
                 
@@ -118,13 +117,14 @@ extension HomeViewController: UICollectionViewDataSource{
             return cell
         } else if indexPath.item == 1 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewGamesTitleCell", for: indexPath)
-            let titleLabel = UILabel(frame: CGRect(x: 10, y: 15, width: self.view.frame.width - 150, height: 30))
+            let titleLabel = UILabel(frame: CGRect(x: 10, y: 15, width: self.view.frame.width - 120, height: 30))
             titleLabel.text = "New Games We Love"
-            titleLabel.font = UIFont.boldSystemFont(ofSize: 22)
+            titleLabel.font = UIFont.boldSystemFont(ofSize: 20)
             cell.contentView.addSubview(titleLabel)
             
-            let seeAllButton = UIButton(frame: CGRect(x: self.view.frame.width - 90, y: 15, width: 70, height: 30))
+            let seeAllButton = UIButton(frame: CGRect(x: self.view.frame.width - 70, y: 15, width: 65, height: 30))
             seeAllButton.setTitle("See All", for: .normal)
+            seeAllButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
             seeAllButton.setTitleColor(UIColor(red: 1.0/255.0, green: 126.0/255.0, blue: 228.0/255.0, alpha: 1), for: .normal)
             seeAllButton.addTarget(self, action: #selector(openListGames), for: .touchUpInside)
             cell.contentView.addSubview(seeAllButton)

@@ -20,7 +20,7 @@ class ListGamesCollectionViewCell: UICollectionViewCell {
     
     lazy var titlelabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.font = UIFont.systemFont(ofSize: 15)
         //        label.textColor = UIColor.blue
         label.text = "Ragnarok M : Eternal Love XXX"
         label.numberOfLines = 2
@@ -29,7 +29,7 @@ class ListGamesCollectionViewCell: UICollectionViewCell {
     
     lazy var subTitlelabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 13)
+        label.font = UIFont.systemFont(ofSize: 12)
         label.textColor = UIColor.gray
         label.text = "The classic adventure returns"
         return label
@@ -57,10 +57,10 @@ class ListGamesCollectionViewCell: UICollectionViewCell {
     lazy var downloadButton: UIButton = {
        let button = UIButton()
         button.setTitle("GET", for: .normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 13)
         button.setTitleColor(UIColor(red: 1.0/255.0, green: 126.0/255.0, blue: 228.0/255.0, alpha: 1), for: .normal)
-        button.layer.cornerRadius = 15
-        button.autoSetDimensions(to: CGSize(width: 70, height: 30))
+        button.layer.cornerRadius = 12.5
+        button.autoSetDimensions(to: CGSize(width: 60, height: 25))
         button.backgroundColor = UIColor.groupTableViewBackground
         return button
     }()
@@ -69,9 +69,15 @@ class ListGamesCollectionViewCell: UICollectionViewCell {
         didSet {
             guard let itemName = item?.name else { return }
             guard let itemPrice = item?.price else { return }
-            setupGamesImage()
+            if let urlImage = item?.imageURL {
+                gamesImage.setupImage(urlString: urlImage)
+            }
             titlelabel.text = itemName
-            subTitlelabel.text = "Rp \((itemPrice/100).formattedWithSeparator)"
+            if itemPrice > 0 {
+                subTitlelabel.text = "Rp \((itemPrice/100).formattedWithSeparator)"
+            } else {
+                subTitlelabel.text = "Free"
+            }
             
         }
     }
@@ -103,20 +109,5 @@ class ListGamesCollectionViewCell: UICollectionViewCell {
         
         purchaseLabel.autoAlignAxis(.vertical, toSameAxisOf: downloadButton)
         purchaseLabel.autoPinEdge(.top, to: .bottom, of: downloadButton, withOffset: 5)
-    }
-    
-    func setupGamesImage(){
-        guard let urlImage = item?.imageURL else { return }
-        let url = URL(string: urlImage)
-        URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            if error != nil {
-                print(error ?? "")
-                return
-            }
-            
-            DispatchQueue.main.async {
-                self.gamesImage.image = UIImage(data: data!)
-            }
-        }.resume()
     }
 }

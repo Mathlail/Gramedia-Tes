@@ -49,8 +49,8 @@ class DetailAppsViewController: UIViewController {
         button.setTitle("GET", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
         button.setTitleColor(UIColor.white, for: .normal)
-        button.layer.cornerRadius = 15
-        button.autoSetDimensions(to: CGSize(width: 80, height: 30))
+        button.layer.cornerRadius = 12.5
+        button.autoSetDimensions(to: CGSize(width: 60, height: 25))
         button.backgroundColor = UIColor(red: 1.0/255.0, green: 126.0/255.0, blue: 228.0/255.0, alpha: 1)
         return button
     }()
@@ -58,8 +58,8 @@ class DetailAppsViewController: UIViewController {
     lazy var moreButton: UIButton = {
         let button = UIButton()
         button.setImage(#imageLiteral(resourceName: "icons8-more-20"), for: .normal)
-        button.layer.cornerRadius = 15
-        button.autoSetDimensions(to: CGSize(width: 30, height: 30))
+        button.layer.cornerRadius = 12.5
+        button.autoSetDimensions(to: CGSize(width: 25, height: 25))
         button.backgroundColor = UIColor(red: 1.0/255.0, green: 126.0/255.0, blue: 228.0/255.0, alpha: 1)
         return button
     }()
@@ -68,9 +68,15 @@ class DetailAppsViewController: UIViewController {
         didSet{
             guard let itemName = dataGames?.name else { return }
             guard let itemPrice = dataGames?.price else { return }
-            setupGamesImage()
+            if let urlImage = dataGames?.imageURL {
+                gamesImage.setupImage(urlString: urlImage)
+            }
             titlelabel.text = itemName
-            subTitlelabel.text = "Rp \((itemPrice/100).formattedWithSeparator)"
+            if itemPrice > 0 {
+                subTitlelabel.text = "Rp \((itemPrice/100).formattedWithSeparator)"
+            } else {
+                subTitlelabel.text = "Free"
+            }
         }
     }
 
@@ -106,20 +112,6 @@ class DetailAppsViewController: UIViewController {
         
         moreButton.autoAlignAxis(.horizontal, toSameAxisOf: downloadButton)
         moreButton.autoPinEdge(toSuperviewEdge: .trailing, withInset: 20)
-    }
-    func setupGamesImage(){
-        guard let urlImage = dataGames?.imageURL else { return }
-        let url = URL(string: urlImage)
-        URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            if error != nil {
-                print(error ?? "")
-                return
-            }
-            
-            DispatchQueue.main.async {
-                self.gamesImage.image = UIImage(data: data!)
-            }
-        }.resume()
     }
 
 }

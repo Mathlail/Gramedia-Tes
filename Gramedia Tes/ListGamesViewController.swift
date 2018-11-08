@@ -34,7 +34,6 @@ class ListGamesViewController: UIViewController {
         title = "New Games We Love"
         collectionView.register(ListGamesBigCollectionViewCell.self, forCellWithReuseIdentifier: "ListGamesBigCell")
         view.addSubview(collectionView)
-        print(dataNewReleaseGames)
         collectionView.autoPinEdge(toSuperviewEdge: .leading)
         collectionView.autoPinEdge(toSuperviewEdge: .trailing)
         collectionView.autoPinEdge(toSuperviewEdge: .bottom)
@@ -53,6 +52,15 @@ extension ListGamesViewController: UICollectionViewDataSource{
         cell.backgroundColor = .white
         cell.item = dataNewReleaseGames[indexPath.item]
         return cell
+    }
+}
+
+extension ListGamesViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = DetailAppsViewController()
+        vc.view.backgroundColor = .white
+        vc.dataGames = dataNewReleaseGames[indexPath.item]
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

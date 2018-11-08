@@ -12,6 +12,7 @@ class ListGamesBigCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -55,10 +56,10 @@ class ListGamesBigCollectionViewCell: UICollectionViewCell {
     lazy var downloadButton: UIButton = {
         let button = UIButton()
         button.setTitle("GET", for: .normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         button.setTitleColor(UIColor(red: 1.0/255.0, green: 126.0/255.0, blue: 228.0/255.0, alpha: 1), for: .normal)
-        button.layer.cornerRadius = 15
-        button.autoSetDimensions(to: CGSize(width: 80, height: 30))
+        button.layer.cornerRadius = 12.5
+        button.autoSetDimensions(to: CGSize(width: 70, height: 25))
         button.backgroundColor = UIColor.groupTableViewBackground
         return button
     }()
@@ -70,11 +71,14 @@ class ListGamesBigCollectionViewCell: UICollectionViewCell {
         return separator
     }()
     
+    let imageCache = NSCache<AnyObject, AnyObject>()
     var item: DataItem? {
         didSet {
             guard let itemName = item?.name else { return }
             guard let itemPrice = item?.price else { return }
-            setupGamesImage()
+            if let urlImage = item?.imageURL {
+                gamesImage.setupImage(urlString: urlImage)
+            }
             titlelabel.text = itemName
             if itemPrice > 0 {
                 subTitlelabel.text = "Rp \((itemPrice/100).formattedWithSeparator)"
@@ -113,21 +117,6 @@ class ListGamesBigCollectionViewCell: UICollectionViewCell {
         separatorView.autoPinEdge(toSuperviewEdge: .bottom)
         separatorView.autoPinEdge(.leading, to: .trailing, of: gamesImage, withOffset: 15)
         separatorView.autoPinEdge(toSuperviewEdge: .trailing, withInset: 20)
-    }
-    
-    func setupGamesImage(){
-        guard let urlImage = item?.imageURL else { return }
-        let url = URL(string: urlImage)
-        URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            if error != nil {
-                print(error ?? "")
-                return
-            }
-            
-            DispatchQueue.main.async {
-                self.gamesImage.image = UIImage(data: data!)
-            }
-            }.resume()
     }
 
 }
